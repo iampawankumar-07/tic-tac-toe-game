@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .outer-container {
+            display: flex;
+            justify-content: center;
+            height: 50vh;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #game {
+            display: grid;
+            height: 190px;
+            width: 177px;
+            grid-template-columns: repeat(3, 50px);
+            background-color: lightgrey;
+            grid-gap: 10px;
+            padding: 15px;
+            margin: 20px, 0;
+        }
+
+        .cell {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-color: grey;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+
+        .cell.taken {
+            pointer-events: none;
+        }
+
+        .reset-game {
+            margin-bottom: 10px;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="outer-container">
+
+  
+
+    <div class="next-player">
+    </div>
+
+    <div id="game">
+    </div>
+
+    <button class="reset-game">
+        Reset
+    </button>
+
+    <div class="winner-status">
+    </div>
+
+
+      </div>
+
+
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
